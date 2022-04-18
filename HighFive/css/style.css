@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.page header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: lightblue;
+}
+.page section {
+    display: flex;
+    flex-grow: 1;
+    min-height: 400px;
+}
+.page section nav {
+    flex-shrink: 0;
+    background: lightsalmon;
+    padding: 1em;
+}
+.page section main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background: lightgreen;
+    padding: 1em;
+}
+.page section main .images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.page section main .images img {
+    margin: 8px;
+}
+.page section aside {
+    background: lightgoldenrodyellow;
+    width: 200px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.page footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: lightcoral;
+}
+
+input{
+    width: min-content;
+}
+
+/*
+    Phone/Mobile styles
+    - Hide side menu
+    - Change order - put content before main menu only with CSS
+    - Switch from column layout (main menu | content | side menu) to row layout
+*/
+@media (max-width: 700px) {
+    .page section {
+        flex-direction: column;
+    }
+    .page section nav {
+        order: 2;
+    }
+    .page section main {
+        order: 1;
+    }
+    .page section aside {
+        display: none;
+    }
+}
