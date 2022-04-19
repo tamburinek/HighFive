@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: black;
 }
 
 .page {
@@ -20,7 +21,7 @@ body {
     flex-grow: 1;
     min-height: 400px;
 }
-.page section nav {
+.page .section nav {
     flex-shrink: 0;
     background: lightsalmon;
     padding: 1em;
