@@ -5,32 +5,74 @@
         <title>
             HighFive
         </title>
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/radim.css">
     </head>
 
     <body>
-        <div class="body">
+        <!-- header -->
+        <header>
+            <div id="logo">
+                <img 
+                id="logo-right"
+                src="../resources/logosmall.svg"
+                alt="logoOfHighFive"
+                height="50vh"
+                width="50vh"></img>
+            </div>
             <div id="settings">
                 <img
                     id="settingsImage"
-                    src="../resources/settings.svg"
+                    src="../resources/volume-up.svg"
                     alt="settingsIcon"
                     height="30vh"
                     width="30vh"></img>
             </div>
-            <div class="main2">
-                <nav>
-                    Main menu
-                </nav>
-                <aside id="side">
-                    Side menu
-                </aside>
+        </header>
+
+        <!-- main -->
+        <main class="cv-main">
+            <div class="left center">
+                    <div id="names">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text">
+
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text">
+                    </div>
+                    <div>
+                        <label>Profile pic</label>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <label>First Name</label>
+                        <input type="text">
+
+                        <label>Last Name</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>First Name</label>
+                        <input type="text">
+
+                        <label>Last Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        <button class="glow-on-hover" type="button">
+                                GENERATE PDF
+                        </button>
+                    </div>
             </div>
-            <div class="footer">
-                <footer>
-                    Created by Tamburinek
-                </footer>
+            <div class="right center">
+                <svg width="420" height="594" viewbox="0 0 100 100">
+                </svg>
             </div>
-        </div>
+        </main>   
+
+        <!-- footer -->
+        <footer class="center">
+            Created by Tamburinek
+        </footer>
     </body>
 </html>
