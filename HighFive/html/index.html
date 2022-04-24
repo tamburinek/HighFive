@@ -10,33 +10,41 @@
 
     <body>
         <!-- header -->
-        <header id="header">
+        <header>
+            <div id="logo" class="hidden">
+                <img
+                        id="logo-right"
+                        src="../resources/logosmall.svg"
+                        alt="logoOfHighFive"
+                        height="50vh"
+                        width="50vh"/>
+            </div>
             <div id="settings">
                 <img
-                    id="settingsImage"
-                    class="up"
-                    src="../resources/volume-up.svg"
-                    alt="settingsIcon"
-                    height="30vh"
-                    width="30vh"></img>
+                        id="settingsImage"
+                        class="up"
+                        src="../resources/volume-up.svg"
+                        alt="settingsIcon"
+                        height="30vh"
+                        width="30vh"/>
             </div>
         </header>
 
         <!-- main -->
-        <main id="index-main" class="index-main">
-            <div>
-                <img src="../resources/logoMain.svg"></img>
-            </div>
+        <main class="app">
+            <div class="index-container">
+                <div>
+                    <img src="../resources/logoMain.svg"/>
+                </div>
 
-            <article>
-                HighFive is effective CV creater and generator. CV is the most important thing
-                when you are looking for new work.
-            </article>
+                <div class="index-title">
+                </div>
 
-            <div>
-                <button id="index-button" class="glow-on-hover" type="button">
-                        CREATE CV
-                </button>
+                <div>
+                    <button id="index-button" class="glow-on-hover" type="button">
+                            CREATE CV
+                    </button>
+                </div>
             </div>
         </main>
 

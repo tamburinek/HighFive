@@ -6,67 +6,136 @@
             HighFive
         </title>
         <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="../css/checkbox.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <!-- header -->
-        <header id="header">
+        <header>
             <div id="logo">
-                <img 
-                id="logo-right"
-                src="../resources/logosmall.svg"
-                alt="logoOfHighFive"
-                height="50vh"
-                width="50vh"></img>
+                <img
+                        id="logo-right"
+                        src="../resources/logosmall.svg"
+                        alt="logoOfHighFive"
+                        />
             </div>
             <div id="settings">
                 <img
-                    id="settingsImage"
-                    src="../resources/volume-up.svg"
-                    alt="settingsIcon"
-                    height="30vh"
-                    width="30vh"></img>
+                        id="settingsImage"
+                        src="../resources/volume-up.svg"
+                        alt="settingsIcon"
+                        />
             </div>
         </header>
-
         <!-- main -->
-        <main class="cv-main">
-            <div class="left center">
-                    <div id="names">
-                        <label for="first-name">First Name</label>
-                        <input id="first-name" type="text">
-                        <label for="last-name">Last Name</label>
-                        <input id="last-name" type="text">
-                    </div>
-                    <div>
-                        <label>Profile pic</label>
-                        <input type="file">
-                    </div>
-                    <div>
-                        <label>First Name</label>
-                        <input type="text">
-                        <label>Last Name</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label>First Name</label>
-                        <input type="text">
-                        <label>Last Name</label>
-                        <input type="text">
-                    </div>
+        <main class="app">
+            <aside class="form">
+                <form action="#" method="post">
+                    <section class="personal-information-section">
+                        <h2 class="section-title-container section-title">Personal Information</h2>
+                        <div class="job-title-container">
+                            <label for="job-title-input">Job title</label>
+                            <input type="text" name="job-title" id="job-title-input">
+                        </div>
+                        <div class="photo-container">
+<!--                            <label for="photo-input">DicPic</label>-->
+                            <label for="photo-input" class="photo-icon center">
+                                Upload profile picture
+                            </label>
+                            <div class="photo-icon-container">
+<!--                                <img class="photo-icon" src="../resources/profile-user.svg" alt="user profile photo">-->
+                            </div>
 
-                    <div>
-                        <button class="glow-on-hover" type="button">
-                                GENERATE PDF
-                        </button>
-                    </div>
-            </div>
-            <div class="right center">
-                <svg width="420" height="594" viewbox="0 0 100 100">
+                            <input type="file" name="photo" id="photo-input"/>
+                        </div>
+                        <div class="first-name-container">
+                            <label for="first-name-input">First Name</label>
+                            <input type="text" name="first-name" id="first-name-input">
+                        </div>
+                        <div class="last-name-container">
+                            <label for="last-name-input">Last Name</label>
+                            <input type="text" name="last-name" id="last-name-input">
+                        </div>
+                        <div class="email-container">
+                            <label for="email-input">Email</label>
+                            <input type="email" name="email" id="email-input">
+                        </div>
+                        <div class="phone-container">
+                            <label for="phone-input">Telephone number</label>
+                            <input type="tel" name="phone" id="phone-input">
+                        </div>
+                    </section>
+                    <section class="summary">
+                        <h2 class="summary-title section-title">Enter your dick size summary here</h2>
+                        <p class="section-description">please, do not say its big, we all know it is not</p>
+                        <textarea name="summary" id="summary-area" cols="30" rows="10">Begin here</textarea>
+                    </section>
+                    <section class="skills">
+                        <h2 class="skills-title section-title">
+                            Pick your skillset moron
+                        </h2>
+                        <ul class="skill-tags">
+                            <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash">
+                                <label for="checkboxOne">Rainbow Dash</label></li>
+                            <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked>
+                                <label for="checkboxTwo">Cotton Candy</label></li>
+                            <li><input type="checkbox" id="checkboxThree" value="Rarity" checked>
+                                <label for="checkboxThree">Rarity</label></li>
+                            <li><input type="checkbox" id="checkboxFour" value="Moondancer">
+                                <label for="checkboxFour">Moondancer</label></li>
+                            <li><input type="checkbox" id="checkboxFive" value="Surprise">
+                                <label for="checkboxFive">Surprise</label></li>
+                            <li><input type="checkbox" id="checkboxSix" value="Twilight Sparkle" checked>
+                                <label for="checkboxSix">Twilight Sparkle</label></li>
+                            <li><input type="checkbox" id="checkboxSeven" value="Fluttershy">
+                                <label for="checkboxSeven">Fluttershy</label></li>
+                            <li><input type="checkbox" id="checkboxEight" value="Derpy Hooves">
+                                <label for="checkboxEight">Derpy Hooves</label></li>
+                            <li><input type="checkbox" id="checkboxNine" value="Princess Celestia">
+                                <label for="checkboxNine">Princess Celestia</label></li>
+                            <li><input type="checkbox" id="checkboxTen" value="Gusty">
+                                <label for="checkboxTen">Gusty</label></li>
+                            <li class="ks-selected"><input type="checkbox" id="checkboxEleven" value="Discord">
+                                <label for="checkboxEleven">Discord</label></li>
+                            <li><input type="checkbox" id="checkboxTwelve" value="Clover">
+                                <label for="checkboxTwelve">Clover</label></li>
+                            <li><input type="checkbox" id="checkboxThirteen" value="Baby Moondancer">
+                                <label for="checkboxThirteen">Baby Moondancer</label></li>
+                            <li><input type="checkbox" id="checkboxFourteen" value="Medley">
+                                <label for="checkboxFourteen">Medley</label></li>
+                            <li><input type="checkbox" id="checkboxFifteen" value="Firefly">
+                                <label for="checkboxFifteen">Firefly</label></li>
+                        </ul>
+                    </section>
+                    <section class="">
+                        <button class="add-new-section-button">add new section</button>
+                    </section>
+                    <section class="new-section">
+                        <div class="new-section-title section-title"><input type="text" name="new-section-title" id="new-section-title-input" placeholder="Enter section name"></div>
+                        <div class="new-section-description section-description"><input type="text" name="new-section-description" id="new-section-description-input" placeholder="Enter text description"></div>
+                        <textarea name="summary" id="new-area" cols="30" rows="10">Begin here</textarea>
+                    </section>
+
+                </form>
+            </aside>
+            <aside class="preview">
+                <svg class="canvas">
                 </svg>
-            </div>
-        </main>   
-
+<!--                <div class="submit-button-container">-->
+<!--                    <input type="button" value="Send it bitch">-->
+<!--                </div>-->
+                <div class="submit-button-container">
+                    <button id="index-button" class="glow-on-hover" type="button">
+                        CREATE CV
+                    </button>
+                </div>
+            </aside>
+        </main>
         <!-- footer -->
         <footer class="center">
             Created by Tamburinek
