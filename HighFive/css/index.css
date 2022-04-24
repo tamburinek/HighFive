@@ -45,14 +45,20 @@ input:focus, textarea:focus, select:focus{
 
 /* ------------------------------------------------- */
 /* index page */
+
+html{
+    overflow-y: hidden;
+}
+
 body {
     /*width: 100vw;*/
     /*height: 100vh;*/
     background-color: var(--primary-bg-color);
     color: var(--primary-color);
+    overflow-y: hidden;
 }
 footer {
-    height: 4vh;
+    height: 3vh;
     width: 100vw;
 }
 
@@ -93,7 +99,7 @@ main {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 2rem;
 }
@@ -118,7 +124,6 @@ main {
     flex: 1;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
 }
 section.form::-webkit-scrollbar{
     display: none;
@@ -127,6 +132,9 @@ section.form::-webkit-scrollbar{
 /*********************************
 -----------FORM SEC---------------
 /*********************************/
+.form {
+    overflow-y: scroll;
+}
 section.form form {
     width:100%;
 }
@@ -318,13 +326,21 @@ textarea {
 .canvas {
     /*width: 80%;*/
     aspect-ratio: 210 / 297;
+    /*width: calc();*/
+    /*object-fit: cover;*/
     background-color: #fff;
+    height: 100%;
 }
 
-.submit-button-container {
+.submit-button-container, .submit-button-container-form {
     position: absolute;
     bottom: 0;
     margin-bottom: 1rem;
+}
+.submit-button-container-form {
+    right: 20px;
+    margin-bottom: 2rem;
+    display: none;
 }
 
 /*.submit-button-container {*/
@@ -436,8 +452,11 @@ textarea {
 }
 
 /* media query */
-@media screen-size {
-    svg{
+@media only screen and (max-width: 750px){
+    .preview{
         display: none;
+    }
+    .submit-button-container-form {
+        display: block;
     }
 }
