@@ -9,54 +9,43 @@
     </head>
 
     <body>
-        <div class="body">
+        <!-- header -->
+        <header id="header">
+            <div id="settings">
+                <img
+                    id="settingsImage"
+                    class="up"
+                    src="../resources/volume-up.svg"
+                    alt="settingsIcon"
+                    height="30vh"
+                    width="30vh"></img>
+            </div>
+        </header>
 
-            <header>
-                <div id="settings">
-                    <img
-                        id="settingsImage"
-                        src="../resources/volume-up.svg"
-                        alt="settingsIcon"
-                        height="30vh"
-                        width="30vh"></img>
-                </div>
-                <div id="settings2">
-                    <img
-                        id="settingsImage"
-                        src="../resources/volume-up.svg"
-                        alt="settingsIcon"
-                        height="30vh"
-                        width="30vh"></img>
-                </div>
-            </header>
-            <div class="main">
-                <div>
-                    <img src="../resources/logoMain.svg"></img>
-                </div>
-                <div class="article">
-                    <article>
-                        HighFive is effective CV creater and generator. CV is the most important thing
-                        when you are looking for new work.
-                    </article>
-                </div>
-
-                <div>
-                    <button class="glow-on-hover" type="button">
-                        <a href="playground.html">
-                            CREATE CV
-                        </a>
-                    </button>
-                </div>
-
+        <!-- main -->
+        <main id="index-main" class="index-main">
+            <div>
+                <img src="../resources/logoMain.svg"></img>
             </div>
 
-            <div class="footer">
-                <footer>
-                    Created by Tamburinek
-                </footer>
+            <article>
+                HighFive is effective CV creater and generator. CV is the most important thing
+                when you are looking for new work.
+            </article>
+
+            <div>
+                <button id="index-button" class="glow-on-hover" type="button">
+                        CREATE CV
+                </button>
             </div>
+        </main>
 
-        </div>
+        <!-- footer -->
+        <footer class="center">
+            Created by Tamburinek
+        </footer>
 
+        <script src="../js/index.js"></script>
+        <script src="../js/render.js"></script>
     </body>
 </html>
