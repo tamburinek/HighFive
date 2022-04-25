@@ -66,7 +66,7 @@ ul.skill-tags li input[type="checkbox"]:not(:checked) + label:hover {
 /*    display: absolute;*/
 /*}*/
 ul.skill-tags li input[type="checkbox"] {
-    position: absolute;
+    position: fixed;
     opacity: 0;
 }
 ul.skill-tags li input[type="checkbox"]:focus + label {

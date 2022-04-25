@@ -6,31 +6,34 @@
             HighFive
         </title>
         <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"/>
         <link rel="stylesheet" href="../css/checkbox.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <script src="../js/index.js"></script>
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet">
     </head>
 
     <body>
         <!-- header -->
         <header>
             <div id="logo">
-                <img
-                        id="logo-right"
-                        src="../resources/logosmall.svg"
-                        alt="logoOfHighFive"
-                        />
+                <a href="index.html"><img id="logo-right" src="../resources/logosmall.svg" alt="logoOfHighFive"/>
+                </a>
             </div>
             <div id="settings">
-                <img
-                        id="settingsImage"
-                        src="../resources/volume-up.svg"
-                        alt="settingsIcon"
-                        />
+                <img id="settingsImage" src="../resources/volume-up.svg" alt="settingsIcon"/>
             </div>
         </header>
         <!-- main -->
@@ -44,12 +47,13 @@
                             <input type="text" name="job-title" id="job-title-input">
                         </div>
                         <div class="photo-container">
-<!--                            <label for="photo-input">DicPic</label>-->
+                            <!-- <label for="photo-input">DicPic</label> -->
                             <label for="photo-input" class="photo-icon center">
-                                Upload profile picture
+                                Choose or drop image
                             </label>
-                            <div class="photo-icon-container">
-<!--                                <img class="photo-icon" src="../resources/profile-user.svg" alt="user profile photo">-->
+                            <div id="test-drop" class="photo-icon-container">
+                                <!-- <img class="photo-icon" src="../resources/profile-user.svg" alt="user
+                                profile photo"> -->
                             </div>
 
                             <input type="file" name="photo" id="photo-input"/>
@@ -72,78 +76,114 @@
                         </div>
                     </section>
                     <section class="summary">
-                        <h2 class="summary-title section-title">Enter your dick size summary here</h2>
-                        <p class="section-description">please, do not say its big, we all know it is not</p>
-                        <textarea name="summary" id="summary-area" cols="30" rows="10">Begin here</textarea>
+                        <h2 class="summary-title section-title">Basic info</h2>
+                        <!-- <p class="section-description">please, do not say its big, we all know it is not</p> -->
+                        <textarea name="summary" id="summary-area" cols="30" rows="10"></textarea>
                     </section>
+                    <section>
+                        <button id="delete-button-basic-info" class="add-new-section-button">delete section</button>
+                    </section>
+                    <section class="new-section">
+                        <div class="new-section-title section-title"><input
+                            type="text"
+                            name="new-section-title"
+                            id="new-section-title-input"
+                            placeholder="Enter section name"></div>
+                        <!-- <div class="new-section-description section-description"><input
+                            type="text"
+                            name="new-section-description"
+                            id="new-section-description-input"
+                            placeholder="Enter text description"></div> -->
+                        <textarea name="summary" id="new-area" cols="30" rows="10"></textarea>
+                    </section>
+                    <section>
+                        <button id="section-button" class="add-new-section-button">add new section</button>
+                    </section>
+
                     <section class="skills">
                         <h2 class="skills-title section-title">
                             Pick your skillset moron
                         </h2>
                         <ul class="skill-tags">
                             <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash">
-                                <label for="checkboxOne">Rainbow Dash</label></li>
-                            <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked>
-                                <label for="checkboxTwo">Cotton Candy</label></li>
-                            <li><input type="checkbox" id="checkboxThree" value="Rarity" checked>
-                                <label for="checkboxThree">Rarity</label></li>
+                                <label for="checkboxOne">Rainbow Dash</label>
+                            </li>
+                            <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy">
+                                <label for="checkboxTwo">Cotton Candy</label>
+                            </li>
+                            <li><input type="checkbox" id="checkboxThree" value="Rarity">
+                                <label for="checkboxThree">Rarity</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxFour" value="Moondancer">
-                                <label for="checkboxFour">Moondancer</label></li>
+                                <label for="checkboxFour">Moondancer</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxFive" value="Surprise">
-                                <label for="checkboxFive">Surprise</label></li>
-                            <li><input type="checkbox" id="checkboxSix" value="Twilight Sparkle" checked>
-                                <label for="checkboxSix">Twilight Sparkle</label></li>
+                                <label for="checkboxFive">Surprise</label>
+                            </li>
+                            <li><input type="checkbox" id="checkboxSix" value="Twilight Sparkle">
+                                <label for="checkboxSix">Twilight Sparkle</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxSeven" value="Fluttershy">
-                                <label for="checkboxSeven">Fluttershy</label></li>
+                                <label for="checkboxSeven">Fluttershy</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxEight" value="Derpy Hooves">
-                                <label for="checkboxEight">Derpy Hooves</label></li>
+                                <label for="checkboxEight">Derpy Hooves</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxNine" value="Princess Celestia">
-                                <label for="checkboxNine">Princess Celestia</label></li>
+                                <label for="checkboxNine">Princess Celestia</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxTen" value="Gusty">
-                                <label for="checkboxTen">Gusty</label></li>
-                            <li class="ks-selected"><input type="checkbox" id="checkboxEleven" value="Discord">
-                                <label for="checkboxEleven">Discord</label></li>
+                                <label for="checkboxTen">Gusty</label>
+                            </li>
+                            <li><input type="checkbox" id="checkboxEleven" value="Discord">
+                                <label for="checkboxEleven">Discord</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxTwelve" value="Clover">
-                                <label for="checkboxTwelve">Clover</label></li>
+                                <label for="checkboxTwelve">Clover</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxThirteen" value="Baby Moondancer">
-                                <label for="checkboxThirteen">Baby Moondancer</label></li>
+                                <label for="checkboxThirteen">Baby Moondancer</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxFourteen" value="Medley">
-                                <label for="checkboxFourteen">Medley</label></li>
+                                <label for="checkboxFourteen">Medley</label>
+                            </li>
                             <li><input type="checkbox" id="checkboxFifteen" value="Firefly">
-                                <label for="checkboxFifteen">Firefly</label></li>
-                        </ul>
-                    </section>
-                    <section class="">
-                        <button class="add-new-section-button">add new section</button>
-                    </section>
-                    <section class="new-section">
-                        <div class="new-section-title section-title"><input type="text" name="new-section-title" id="new-section-title-input" placeholder="Enter section name"></div>
-                        <div class="new-section-description section-description"><input type="text" name="new-section-description" id="new-section-description-input" placeholder="Enter text description"></div>
-                        <textarea name="summary" id="new-area" cols="30" rows="10">Begin here</textarea>
-                    </section>
-                </form>
+                                <label for="checkboxFifteen">Firefly</label>
+                            </li>
+                        </section>
+                        <section>
+                            <div class="new-section-title section-title"><input
+                                type="text"
+                                name="new-section-title"
+                                id="new-skill-title"
+                                placeholder="Enter skill name"></div>
+                            <button id="skill-button" class="add-new-section-button">add new skill</button>
+                        </section>
+                    </form>
                     <div class="submit-button-container submit-button-container-form">
                         <button class="glow-on-hover" type="button">
                             CREATE CV
                         </button>
                     </div>
-            </aside>
-            <aside class="preview">
+                </aside>
+                <aside class="preview">
                     <svg class="canvas">
+                        <!-- svg -->
                     </svg>
-<!--                <div class="submit-button-container">-->
-<!--                    <input type="button" value="Send it bitch">-->
-<!--                </div>-->
-                <div class="submit-button-container">
-                    <button id="index-button" class="glow-on-hover" type="button">
-                        CREATE CV
-                    </button>
-                </div>
-            </aside>
-        </main>
-        <!-- footer -->
-        <footer class="center">
-            Created by Tamburinek
-        </footer>
-    </body>
-</html>
+                    <!-- <div class="submit-button-container">-->
+                    <!-- <input type="button" value="Send it bitch">-->
+                    <!-- </div>-->
+                    <div class="submit-button-container">
+                        <button id="index-button" class="glow-on-hover" type="button">
+                            CREATE CV
+                        </button>
+                    </div>
+                </aside>
+            </main>
+            <!-- footer -->
+            <footer class="center">
+                Created by Tamburinek
+            </footer>
+            <script src="../js/bottom.js"></script>
+        </body>
+    </html>
