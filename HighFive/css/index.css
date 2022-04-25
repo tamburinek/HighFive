@@ -6,9 +6,7 @@
 }
 :root {
     --primary-bg-color: black;
-    /*--main-color: #DFDEDF;*/
     --primary-color: #eee;
-    /*--primary-color: #fff;*/
     --secondary-bg-color: #1C1D1F;
     --secondary-color: #989898;
     --title-color: orange;
@@ -19,16 +17,11 @@ input, textarea {
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
-    /*padding: 0 .2rem 0 .2rem;*/
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
-    /*outline: 1px solid var(--secondary-color)*/
 }
 
-/*input:focus, textarea:focus {*/
-/*    box-shadow: 0 0 .4rem .1rem var(--secondary-color);*/
-/*}*/
 
 
 .center {
@@ -45,20 +38,9 @@ input:focus, textarea:focus, select:focus{
     display: none;
 }
 
-
-/* ------------------------------------------------- */
-/* index page */
-
-/* html{
-    overflow-y: hidden;
-} */
-
 body {
-    /*width: 100vw;*/
-    /*height: 100vh;*/
     background-color: var(--primary-bg-color);
     color: var(--primary-color);
-    /* overflow-y: hidden; */
 }
 footer {
     height: 3vh;
@@ -91,11 +73,8 @@ main {
     display: flex;
     height: 90vh;
     width: 100vw;
-    /*flex: 1;*/
-    /*flex-direction: column;*/
     align-items: center;
     justify-content: space-evenly;
-    /*padding-bottom: 10vh;*/
 }
 
 
@@ -164,7 +143,6 @@ section.form form {
 section{
     width: 100%;
     padding: 1rem;
-    /*background: var(--secondary-bg-color);*/
     background: var(--primary-bg-color);
     margin-bottom: .1rem;
 }
@@ -184,7 +162,6 @@ section{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .2fr auto 1fr 1fr;
     gap: 0 1rem;
-    /*grid-auto-flow: row;*/
     grid-template-areas:
     "title title"
     "job-title photo"
@@ -241,7 +218,6 @@ section{
 .photo-icon {
     height: 100%;
     margin-right: .5rem;
-    /*fill: #989898;*/
 }
 .photo-container input{
     display: none;
@@ -313,7 +289,6 @@ textarea {
 
 .new-section {
     background-color: var(--primary-bg-color);
-    /*background-color: var(--secondary-bg-color);*/
 }
 
 
@@ -321,7 +296,6 @@ textarea {
     width: 100%;
     height: 100%;
     background-color: var(--primary-bg-color);
-    /*background-color: var(--secondary-bg-color);*/
     color: var(--title-color);
     font-size: 1.5em;
 }
@@ -329,7 +303,6 @@ textarea {
     width: 100%;
     height: 100%;
     background-color: var(--primary-bg-color);
-    /*background-color: var(--secondary-bg-color);*/
     color: var(--secondary-color);
     font-size: 1em;
 }
@@ -342,16 +315,12 @@ textarea {
     position: relative;
     display: flex;
     flex-direction: column;
-    /*width: 50vw;*/
     justify-content: space-between;
     align-items: center;
 }
 
 .canvas {
-    /*width: 80%;*/
     aspect-ratio: 210 / 297;
-    /*width: calc();*/
-    /*object-fit: cover;*/
     background-color: #fff;
     height: 100%;
 }
@@ -366,41 +335,6 @@ textarea {
     margin-bottom: 2rem;
     display: none;
 }
-
-/*.submit-button-container {*/
-/*    !*padding: 1rem;*!*/
-/*    margin-top: .2rem;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.submit-button-container input{*/
-/*    font-size: 1.5rem;*/
-/*    padding: .2rem;*/
-/*    width: 100%;*/
-/*    border-radius: 0;*/
-/*}*/
-
-
-
-/*********************************/
-
-
-/* ------------------------------------------------- */
-/* cv generator page */
-
-
-/* debug */
-/* .right{
-    background-color: yellow;
-}
-
-.left{
-    background-color: salmon;
-} */
-
-
-
-
 
 /* ------------------------------------------------- */
 /* button css */
@@ -484,3 +418,7 @@ textarea {
         display: block;
     }
 }
+
+/* #myCanvas2{
+    display: none;
+} */

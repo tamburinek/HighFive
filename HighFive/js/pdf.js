@@ -1,6 +1,6 @@
 function ExportPdf(){ 
     kendo.drawing
-        .drawDOM("#myCanvas", 
+        .drawDOM("#myCanvas2", 
         { 
             forcePageBreak: ".page-break", 
             paperSize: "A4",
@@ -18,7 +18,7 @@ function ExportPdf(){
 let el = document.getElementById("index-button");
 el.addEventListener("click", ExportPdf);    
 
-var canvas = document.getElementById("myCanvas");
+var canvas = document.getElementById("myCanvas2");
 var ctx = canvas.getContext("2d");
 ctx.font = "10px Arial";
 ctx.fillText("Hello World", 200, 200);

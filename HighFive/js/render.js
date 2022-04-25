@@ -42,3 +42,4 @@ skillButton.addEventListener("click", (e) => {
     helperInput.value = '';
 })
 
+// todo generate section
