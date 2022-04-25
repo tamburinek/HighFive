@@ -46,7 +46,7 @@
         <!-- main -->
         <main class="app">
             <aside class="form">
-                <form action="#" method="post">
+                <form id="form" action="#" method="post">
                     <section class="personal-information-section">
                         <h2 class="section-title-container section-title">Personal Information</h2>
                         <div class="job-title-container">
@@ -82,12 +82,12 @@
                             <input type="tel" name="phone" id="phone-input">
                         </div>
                     </section>
-                    <section class="summary">
+                    <section id="basic" class="summary">
                         <h2 class="summary-title section-title">Basic info</h2>
                         <!-- <p class="section-description">please, do not say its big, we all know it is not</p> -->
                         <textarea name="summary" id="summary-area" cols="30" rows="10"></textarea>
                     </section>
-                    <section>
+                    <section id="basic-remove-button">
                         <button id="delete-button-basic-info" class="add-new-section-button">delete section</button>
                     </section>
                     <section class="new-section">
@@ -96,11 +96,6 @@
                             name="new-section-title"
                             id="new-section-title-input"
                             placeholder="Enter section name"></div>
-                        <!-- <div class="new-section-description section-description"><input
-                            type="text"
-                            name="new-section-description"
-                            id="new-section-description-input"
-                            placeholder="Enter text description"></div> -->
                         <textarea name="summary" id="new-area" cols="30" rows="10"></textarea>
                     </section>
                     <section>
@@ -109,7 +104,7 @@
 
                     <section class="skills">
                         <h2 class="skills-title section-title">
-                            Pick your skillset moron
+                            Choose your skills
                         </h2>
                         <ul class="skill-tags">
                             <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash">
@@ -193,5 +188,6 @@
             </footer>
             <script src="../js/bottom.js"></script>
             <script src="../js/pdf.js"></script>
+            <script src="../js/render.js"></script>
         </body>
     </html>
