@@ -1,3 +1,4 @@
+//building pdf file from canvas
 function ExportPdf(){ 
     kendo.drawing
         .drawDOM("#myCanvas2", 
@@ -18,8 +19,8 @@ function ExportPdf(){
 let el = document.getElementById("index-button");
 el.addEventListener("click", ExportPdf);    
 
-var canvas = document.getElementById("myCanvas2");
-var ctx = canvas.getContext("2d");
-ctx.font = "10px Arial";
-ctx.fillText("Hello World", 200, 200);
+// var canvas = document.getElementById("myCanvas2");
+// var ctx = canvas.getContext("2d");
+// ctx.font = "10px Arial";
+// ctx.fillText("Hello World", 200, 200);
 

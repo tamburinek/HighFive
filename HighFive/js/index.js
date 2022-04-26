@@ -1,3 +1,4 @@
+//animating home page
 function typeWriter(i) {
     let speed = 75;
     var txt = 'HighFive is effective CV creater and generator. CV is the most important thing when you are looking for new job.';

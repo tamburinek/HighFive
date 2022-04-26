@@ -1,7 +1,4 @@
-$(document).on("keydown",function(event) {
-    return event.key != "Enter";
-});
-
+// delete basic section
 let eli = document.getElementById("delete-button-basic-info");
 eli.addEventListener("click", (e)=>{
     e.preventDefault();
@@ -12,6 +9,7 @@ eli.addEventListener("click", (e)=>{
     form.removeChild(buttonRemove);
 });
 
+// creating skills
 let skillButton = document.getElementById("skill-button");
 skillButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -41,5 +39,3 @@ skillButton.addEventListener("click", (e) => {
 
     helperInput.value = '';
 })
-
-// todo generate section

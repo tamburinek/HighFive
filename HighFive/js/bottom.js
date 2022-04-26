@@ -1,3 +1,4 @@
+//changing volume image when pressing
 function volumeChanger() {
     imageEl = document.getElementById("settingsImage");
     imageEl.addEventListener("click", (e) => {
@@ -17,18 +18,6 @@ function changeCanvasSize() {
     var cHeight = canvas.clientHeight;
     var cWidthSize = canvas.style.width = (210/297)*cHeight + "px";
 }
-
-
-
-// let test = document.getElementById("skill-button");
-// test.addEventListener("click", (e) => {
-//     e.preventDefault();
-// })
-
-// let test2 = document.getElementById("section-button");
-// test2.addEventListener("click", (e) => {
-//     e.preventDefault();
-// })
 
 // let test3 = document.getElementById("test-drop");
 // test3.style.mask = "url(../resources/image004.png) no-repeat center / contain"

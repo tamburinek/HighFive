@@ -54,13 +54,10 @@
                             <input type="text" name="job-title" id="job-title-input">
                         </div>
                         <div class="photo-container">
-                            <!-- <label for="photo-input">DicPic</label> -->
                             <label for="photo-input" class="photo-icon center">
                                 Choose or drop image
                             </label>
                             <div id="test-drop" class="photo-icon-container">
-                                <!-- <img class="photo-icon" src="../resources/profile-user.svg" alt="user
-                                profile photo"> -->
                             </div>
 
                             <input type="file" name="photo" id="photo-input"/>
@@ -80,6 +77,14 @@
                         <div class="phone-container">
                             <label for="phone-input">Telephone number</label>
                             <input type="tel" name="phone" id="phone-input">
+                        </div>
+                        <div class="birth-container">
+                            <label for="birth-input">Birth date</label>
+                            <input type="date" name="date" id="birth-input">
+                        </div>
+                        <div class="placeholder-container">
+                            <label for="placeholder-input">Placeholder</label>
+                            <input type="text" name="placeholder" id="placeholder-input">
                         </div>
                     </section>
                     <section id="basic" class="summary">
@@ -144,7 +149,7 @@
                                 <label for="checkboxTwelve">Clover</label>
                             </li>
                             <li><input type="checkbox" id="checkboxThirteen" value="Baby Moondancer">
-                                <label for="checkboxThirteen">Baby Moondancer</label>
+                                <label draggable="true" for="checkboxThirteen">Baby Moondancer</label>
                             </li>
                             <li><input type="checkbox" id="checkboxFourteen" value="Medley">
                                 <label for="checkboxFourteen">Medley</label>
@@ -187,8 +192,9 @@
             <footer class="center">
                 Created by Tamburinek
             </footer>
+            <script src="../js/render.js"></script>
             <script src="../js/bottom.js"></script>
             <script src="../js/pdf.js"></script>
-            <script src="../js/render.js"></script>
+            <script src="../js/helper.js"></script>
         </body>
     </html>

@@ -166,13 +166,16 @@ section{
     "title title"
     "job-title photo"
     "first-name last-name"
-    "email phone";
+    "email phone"
+    "date placeholder";
 }
 .job-title-container,
 .first-name-container,
 .last-name-container,
 .email-container,
-.phone-container {
+.phone-container,
+.birth-container,
+.placeholder-container {
     display: flex;
     flex-direction: column;
     padding: 1rem .1rem 1rem .1rem;
@@ -223,11 +226,16 @@ section{
     display: none;
 }
 
+.birth-container{
+    height: 95%;
+}
+
 
 .last-name-container { grid-area: last-name; }
 .email-container { grid-area: email; }
 .phone-container { grid-area: phone; }
-
+.birth-container {grid-area: date;}
+.placeholder-container{grid-area: placeholder;}
 
 /*------------SUMMARY-----------*/
 .summary {
