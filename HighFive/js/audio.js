@@ -1,0 +1,20 @@
+let a = new Audio();
+a.src = "../resources/elevator.mp3";
+
+//changing volume image when pressing
+function volumeChanger() {
+    imageEl = document.getElementById("settingsImage");
+    imageEl.addEventListener("click", (e) => {
+        if (e.target.className == "up") {
+            e.target.src = "../resources/volume-down.svg";
+            e.target.className = "down"
+            a.pause();
+        } else {
+            e.target.src = "../resources/volume-up.svg";
+            e.target.className = "up"
+            a.play();
+        }
+    })
+}
+
+volumeChanger();
