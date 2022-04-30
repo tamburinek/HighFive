@@ -18,11 +18,10 @@ input, textarea {
     border-radius: 5px;
     background-color: var(--primary-color);
 }
+
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
-
-
 
 .center {
     display: flex;
@@ -292,6 +291,14 @@ textarea {
 .add-new-section-button:focus {
     opacity: .75;
 }
+
+#logo-right{
+    transition: transform .7s ease-in-out;
+}
+
+#logo-right:hover {
+    transform: rotate(360deg);
+  }
 
 /*-------------NEW section------------*/
 
