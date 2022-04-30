@@ -15,11 +15,14 @@ skillButton.addEventListener("click", (e) => {
     e.preventDefault();
     let helperInput = document.getElementById("new-skill-title");
     let textString = helperInput.value;
-    let formToTag = document.querySelector(".skill-tags");
-
+    textString = textString.trim();
     if(textString == ''){
+        helperInput.value = '';
         return;
     }
+
+    let formToTag = document.querySelector(".skill-tags");
+
 
     liEl = document.createElement('li');
 
