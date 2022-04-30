@@ -8,37 +8,3 @@ eli.addEventListener("click", (e)=>{
     form.removeChild(basic);
     form.removeChild(buttonRemove);
 });
-
-// creating skills
-let skillButton = document.getElementById("skill-button");
-skillButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    let helperInput = document.getElementById("new-skill-title");
-    let textString = helperInput.value;
-    textString = textString.trim();
-    if(textString == ''){
-        helperInput.value = '';
-        return;
-    }
-
-    let formToTag = document.querySelector(".skill-tags");
-
-
-    liEl = document.createElement('li');
-
-    inputElementik = document.createElement('input');
-    inputElementik.type = "checkbox";
-    inputElementik.id = textString;
-    inputElementik.value = textString;
-
-    labelEl = document.createElement('label');
-    labelEl.htmlFor = textString;
-    labelEl.innerText = textString;
-
-    liEl.appendChild(inputElementik);
-    liEl.appendChild(labelEl);
-
-    formToTag.appendChild(liEl);
-
-    helperInput.value = '';
-})

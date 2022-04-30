@@ -1,0 +1,104 @@
+const initialState = {
+    skills: [
+        { text: 'JAVA', checked: false},
+        { text: 'CSS', checked: false},
+        { text: 'Python', checked: false},
+        { text: 'HTML', checked: false},
+        { text: 'C++', checked: false},
+        { text: 'JavaScript', checked: false},
+        { text: 'Googling', checked: false}
+    ]
+};
+
+class Skill{
+    constructor(initialSkills){
+        this._skills = initialSkills;
+        for (const skill of this._skills) {
+            this.createSkill(skill.text, skill.checked);
+        }
+    }
+
+    checkButton(skill, bol){
+        for (const skillik of this._skills) {
+            if(skillik.text == skill){
+                skillik.checked = bol;
+                let inputToBeChecked = document.getElementById(skill);
+                inputToBeChecked.checked = bol;
+            }
+        }
+    }
+
+    addSkill(skill){
+        if(this.exists(skill)){
+            this.checkButton(skill, true)
+            return;
+        }
+        this.createSkill(skill, true);
+        const newTodo = {
+            text:skill,
+            checked:true
+        }
+        this._skills.push(newTodo);
+    }
+
+    exists(skill){
+        for (const skillik of this._skills) {
+            if(skillik.text == skill){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // todo addEventListenerOnButton
+    createSkill(skill, checked){
+        let testStringik = skill;
+        let formToTag = document.querySelector(".skill-tags");
+        let liEl = document.createElement('li');
+    
+        let inputElementik = document.createElement('input');
+        inputElementik.type = "checkbox";
+        inputElementik.id = testStringik;
+        inputElementik.value = testStringik;
+        if(checked){
+            inputElementik.checked = true;
+        }
+    
+        inputElementik.addEventListener("click", (e) => {
+            if(!e.target.checked){
+                this.checkButton(e.target.value, false);
+                e.target.checked = false;
+            }
+            else{
+                this.checkButton(e.target.value, true);
+                e.target.checked = true;
+            }  
+        })
+    
+        let labelEl = document.createElement('label');
+        labelEl.htmlFor = testStringik;
+        labelEl.innerText = testStringik;
+    
+        liEl.appendChild(inputElementik);
+        liEl.appendChild(labelEl);
+    
+        formToTag.appendChild(liEl);
+    }
+}
+
+let skills = new Skill(initialState.skills);
+
+// creating skills with button
+let skillButton = document.getElementById("skill-button");
+skillButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    let helperInput = document.getElementById("new-skill-title");
+    let textString = helperInput.value;
+    textString = textString.trim();
+    if(textString == ''){
+        helperInput.value = '';
+        return;
+    }
+    skills.addSkill(textString);
+    helperInput.value = '';
+})
