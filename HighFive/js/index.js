@@ -27,7 +27,7 @@ buttonToToggle.addEventListener("click", (e) => {
 
     toglik.classList.toggle("anim-trans");
     console.log("i was here")
-    setTimeout(redirect, 5000)
+    setTimeout(redirect, 9000)
 })
 
 function redirect(){
