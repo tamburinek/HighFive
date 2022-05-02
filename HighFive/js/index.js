@@ -1,6 +1,6 @@
 //animating home page
 function typeWriter(i) {
-    let speed = 200;
+    let speed = 100;
     var txt = `HighFive is effective CV creater and generator. CV is the most important thing when you are looking for new job.
     So u have to spend some time to make it perfect. This app is actually not that perfect but it is what it is.
     `;
@@ -11,3 +11,21 @@ function typeWriter(i) {
 }
 typeWriter(0);
 
+
+let buttonToToggle = document.getElementById("index-button");
+buttonToToggle.addEventListener("click", (e) => {
+    e.preventDefault()
+    let toglik = document.querySelector(".transition");
+    // toglik.style.background = "white"
+    let mainik = document.querySelector(".index-title");
+    buttonToToggle.style.display = "none"
+    mainik.style.display = "none"
+
+    toglik.classList.toggle("anim-trans");
+    console.log("i was here")
+    setTimeout(redirect, 5000)
+})
+
+function redirect(){
+    document.location.href = "../html/playground.html"
+}

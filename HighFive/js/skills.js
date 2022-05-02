@@ -123,8 +123,8 @@ skillButton.addEventListener("click", (e) => {
     helperInput.value = '';
 })
 
-let somethingNew = document.getElementById("myCanvas");
-somethingNew.addEventListener("ondrop", (e) => {
-    e.preventDefault();
-    console.log(e)
-})
+// let somethingNew = document.getElementById("myCanvas");
+// somethingNew.addEventListener("ondrop", (e) => {
+//     e.preventDefault();
+//     console.log(e)
+// })

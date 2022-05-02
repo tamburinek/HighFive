@@ -123,6 +123,7 @@ a{
 .form{
     -ms-overflow-style: none;
     scrollbar-width: none;
+    align-items: stretch;
 }
 
 section.form::-webkit-scrollbar{
@@ -437,3 +438,43 @@ textarea {
 /* #myCanvas2{
     display: none;
 } */
+
+
+
+.transition {
+    position:absolute;
+    height:100%;
+    width:30%;
+    background: black;
+    transform: skewX(-5deg) translateX(-50px);
+    transition:2s all ease-in-out;
+    -webkit-transition:2s all ease-in-out;
+    float: left;
+    z-index: -1000;
+  }
+  
+  .content {
+    position:relative;
+    padding:200px 0 0 200px;
+    color:#000;
+    z-index:10;
+    height:300px;
+  }
+
+  .anim-trans {
+    animation: anim 4s ease-in-out;
+    }
+  
+  @keyframes anim{
+       0% { }
+       20%  { z-index:11;\transform: skewX(5deg) translateX(-100%); }
+       40%   { transform: skewX(0deg) translateX(0);
+   width:100%; z-index:11; box-shadow: 10px 10px 5px #000;}
+       60%   { transform: skewX(3deg) translateX(0);background: white;
+   width:100%;z-index:11; box-shadow: 10px 10px 5px #000;}
+       80%   { transform: skewX(1deg) translateX(-100%);
+   width:60%;z-index:11; box-shadow: 10px 10px 5px #000;}
+       100%   { transform: skewX(-5deg) translateX(-50px);
+   width:10%;z-index:1; box-shadow: none;
+    background: black;}
+  }
