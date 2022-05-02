@@ -466,10 +466,10 @@ textarea {
     }
   
   @keyframes anim{
-       0% { }
-       20%  { z-index:11;\transform: skewX(5deg) translateX(-100%); }
+       0% {background: black; z-index: 11;width:100% ;}
+       20%  { z-index:11; transform: skewX(5deg) translateX(-100%);width:100%; }
        40%   { transform: skewX(0deg) translateX(0);
-   width:100%; z-index:11; box-shadow: 10px 10px 5px #000;}
+   width:100%; z-index:11; box-shadow: 10px 10px 5px #000; background: white;}
        60%   { transform: skewX(3deg) translateX(0);background: white;
    width:100%;z-index:11; box-shadow: 10px 10px 5px #000;}
        80%   { transform: skewX(1deg) translateX(-100%);
