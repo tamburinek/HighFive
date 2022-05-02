@@ -1,6 +1,4 @@
 let svg = document.getElementById("find");
-console.log(svg.innerHTML)
-
 svg = svg.innerHTML;
 
 let butonik = document.getElementById("index-button")
@@ -34,7 +32,6 @@ function getSvgUrl(svg) {
     return URL.createObjectURL(new Blob([svg], {type: 'image/svg+xml'}));
 }
 function svgUrlToPng(svgUrl, callback) {
-    console.log(svgUrl)
     const svgImage = document.createElement('img');
     // imgPreview.style.position = 'absolute'; imgPreview.style.top = '-9999px';
     document

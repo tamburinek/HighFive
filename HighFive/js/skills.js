@@ -50,11 +50,25 @@ class Skill{
         return false;
     }
 
+    deleteSkill(skill){
+        let index = 0;
+        for (const item of this._skills) {
+            if(item.text == skill){
+                this._skills.splice(index,1);
+                let deleteLabel = document.getElementById(skill+"-li");
+                let helperParent = document.querySelector(".skill-tags");
+                helperParent.removeChild(deleteLabel);
+            }
+            index++;
+        }
+    }
+
     // todo addEventListenerOnButton
     createSkill(skill, checked){
         let testStringik = skill;
         let formToTag = document.querySelector(".skill-tags");
         let liEl = document.createElement('li');
+        liEl.id = skill + "-li"
     
         let inputElementik = document.createElement('input');
         inputElementik.type = "checkbox";
@@ -78,6 +92,12 @@ class Skill{
         let labelEl = document.createElement('label');
         labelEl.htmlFor = testStringik;
         labelEl.innerText = testStringik;
+        labelEl.draggable = "true"
+        labelEl.id = skill + "-label"
+
+        labelEl.addEventListener("dragend", (e) =>{
+            this.deleteSkill(e.target.htmlFor)
+        })
     
         liEl.appendChild(inputElementik);
         liEl.appendChild(labelEl);
@@ -101,4 +121,10 @@ skillButton.addEventListener("click", (e) => {
     }
     skills.addSkill(textString);
     helperInput.value = '';
+})
+
+let somethingNew = document.getElementById("myCanvas");
+somethingNew.addEventListener("ondrop", (e) => {
+    e.preventDefault();
+    console.log(e)
 })
