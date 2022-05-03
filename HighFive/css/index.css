@@ -462,7 +462,7 @@ textarea {
   }
 
   .anim-trans {
-    animation: anim 8s ease-in-out;
+    animation: anim 4s ease-in-out;
     }
   
   @keyframes anim{

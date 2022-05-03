@@ -26,8 +26,7 @@ buttonToToggle.addEventListener("click", (e) => {
     // mainik.style.visibility = "hidden"
 
     toglik.classList.toggle("anim-trans");
-    console.log("i was here")
-    setTimeout(redirect, 9000)
+    setTimeout(redirect, 5000)
 })
 
 function redirect(){
