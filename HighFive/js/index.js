@@ -15,7 +15,6 @@ typeWriter(0);
 let buttonToToggle = document.getElementById("index-button");
 buttonToToggle.addEventListener("click", (e) => {
     e.preventDefault()
-    let toglik = document.querySelector(".transition");
     // toglik.style.background = "white"
     let mainik = document.querySelector(".index-title");
     let logik = document.querySelector(".logoLogo")
@@ -24,9 +23,10 @@ buttonToToggle.addEventListener("click", (e) => {
     mainik.style.display = "none"
     // buttonToToggle.style.visibility = "hidden"
     // mainik.style.visibility = "hidden"
+    let balls = document.querySelector(".loader");
+    balls.style.display = "block";
 
-    toglik.classList.toggle("anim-trans");
-    setTimeout(redirect, 5000)
+    setTimeout(redirect, 1500)
 })
 
 function redirect(){
