@@ -525,7 +525,7 @@ $loaderWidth = 75px; */
     animation-delay: -.16s;
 }
 .loader-ball:last-child {
-    animation: load1 1s ease-in-out infinite;
+    animation: load3 1s ease-in-out infinite;
     animation-delay: -.32s;
 }
 
@@ -545,24 +545,23 @@ $loaderWidth = 75px; */
     100% {
         opacity: 0;
     }
-
 }
 
 @keyframes load2 {
     0% {
-        opacity: 0.66;
+        opacity: 1;
     }
 
     33% {
-        opacity: 0.33;
+        opacity: 0.66;
     }
 
     66% {
-        opacity: 0.0;
+        opacity: 0.33;
     }
 
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 
 }
@@ -577,11 +576,11 @@ $loaderWidth = 75px; */
     }
 
     66% {
-        opacity: 1;
+        opacity: 0.33;
     }
 
     100% {
-        opacity: 0.66;
+        opacity: 1;
     }
 
 }
