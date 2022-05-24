@@ -1,7 +1,7 @@
 .radio-toolbar {
     padding: 16px;
     display: flex;
-
+    justify-content: space-around;
   }
   
   .radio-toolbar input[type="radio"] {
@@ -12,12 +12,13 @@
   
   .radio-toolbar label {
       display: inline-block;
-      background-color: salmon;
       padding: 10px 20px;
       font-family: sans-serif, Arial;
       font-size: 16px;
-      border: 2px solid #444;
-      border-radius: 4px;
+      border: 2px solid black;
+      border-radius: 40px;
+      height: 40px;
+      width: 40px;
   }
 
   .radio-toolbar input[type="radio"]:focus + label {
@@ -25,9 +26,54 @@
   }
   
   .radio-toolbar input[type="radio"]:checked + label {
-      border-color: white;
+      border-color: white !important;
   }
 
+  .radio-toolbar input[type="radio"]:checked + #whiteLabel {
+    border-color: orange !important;
+}
+
 .radioLabel{
-    flex-grow: 1;
+    flex-grow: 0;
+}
+
+.radio-toolbar #blueLabel {
+    background-color: rgb(63, 63, 207);
+}
+
+.radio-toolbar #lightBlueLabel {
+    background-color: lightblue;
+}
+
+.radio-toolbar #whiteLabel {
+    background-color: white;
+}
+
+.radio-toolbar #purpleLabel {
+    background-color: rgb(255, 143, 162);
+}
+
+.radio-toolbar #yellowLabel {
+    background-color: yellow;
+}
+
+.radio-toolbar #blakcLabel {
+    background-color: black;
+    border: 2px solid rgb(57, 56, 56);
+}
+
+.radio-toolbar #redLabel {
+    background-color: red;
+}
+
+.radio-toolbar #greenLabel {
+    background-color: rgb(52, 173, 52);
+}
+
+.radio-toolbar #brownLabel {
+    background-color: brown;
+}
+
+.radio-toolbar #orangeLabel {
+    background-color: rgb(237, 170, 47);
 }
