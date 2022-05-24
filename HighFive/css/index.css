@@ -201,29 +201,40 @@ section {
 .photo-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     height: 100%;
     padding-left: 0.2rem;
-}
-.photo-container:hover label {
-    color: var(--secondary-color);
-    cursor: pointer;
-}
-.photo-icon-container {
-    height: 120%;
-    width: 30%;
-    background-color: orange;
-    /* defines the background color of the image */
-    mask: url("../resources/profile-user.svg") no-repeat center / contain;
-    -webkit-mask: url("../resources/profile-user.svg") no-repeat center / contain;
+    margin-right: 5px;
 }
 
-.photo-container:hover .photo-icon-container {
-    background-color: white;
-    /* defines the background color of the image */
-    mask: url("../resources/drag.png") no-repeat center / contain;
-    -webkit-mask: url("../resources/drag.png") no-repeat center / contain;
+.photo-container label {
+    flex-grow: 1;
+    color: orange;
 }
+
+.photo-container label:hover {
+    color: white;
+}
+
+.photo-container:hover label {
+    cursor: pointer;
+}
+
+.photo-icon-container {
+    height: 100%;
+    width: 30%;
+    background-color: black;
+    /* defines the background color of the image */
+    /* mask: url("../resources/profile-user.svg") no-repeat center / contain; */
+    /* -webkit-mask: url("../resources/profile-user.svg") no-repeat center / contain; */
+}
+
+/* .photo-container:hover .photo-icon-container {
+    background-color: white;
+    mask: url("../resources/drag.png") no-repeat center / contain;
+    -webkit-mask: url("../resources/drag.png") no-repeat center / contain; 
+} */
+
 
 .photo-icon {
     height: 100%;
@@ -583,4 +594,9 @@ $loaderWidth = 75px; */
         opacity: 1;
     }
 
+}
+
+#test-pic{
+    max-width: 100px;
+    max-height: 100px;
 }
