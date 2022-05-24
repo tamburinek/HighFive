@@ -17,7 +17,6 @@ function drawRec(){
         var ctx = canvas.getContext('2d');
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = colorToCanvas
-        ctx.fillRect(0, 0, cWidthSize / 3, cHeight);
-        console.log(cHeight)
+        ctx.fillRect(1, 1, (cWidthSize / 3) -2, cHeight-2);
     }
 }
