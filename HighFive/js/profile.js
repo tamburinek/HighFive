@@ -7,3 +7,12 @@ inputPic.onchange = function(e) {
 	let url = URL.createObjectURL(file);
     testPic.src = url;
 }
+
+// let picArea = document.getElementsByClassName("photo-container")
+
+// picArea.ondrop = function(e) {
+// 	e.preventDefault()
+// 	e.stopPropagation()
+// 	let dropped = e.dataTransfer
+// 	console.log("i was here")
+// }
