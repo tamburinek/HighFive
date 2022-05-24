@@ -8,11 +8,30 @@ inputPic.onchange = function(e) {
     testPic.src = url;
 }
 
-// let picArea = document.getElementsByClassName("photo-container")
+const dropArea = document.querySelector(".app");
 
-// picArea.ondrop = function(e) {
-// 	e.preventDefault()
-// 	e.stopPropagation()
-// 	let dropped = e.dataTransfer
-// 	console.log("i was here")
-// }
+;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+	dropArea.addEventListener(eventName, preventDefaults, false)
+  })
+  
+  function preventDefaults (e) {
+	e.preventDefault()
+	e.stopPropagation()
+  }
+
+dropArea.addEventListener('drop', handleDrop, false)
+
+function handleDrop(e) {
+  let dt = e.dataTransfer.files[0]
+  previewFile(dt)
+}
+
+function previewFile(file) {
+	let reader = new FileReader()
+	reader.readAsDataURL(file)
+	reader.onloadend = function() {
+		let img = document.getElementById("test-pic");
+		img.src = reader.result
+		// dropArea.appendChild(img)
+	}
+}
