@@ -4,7 +4,6 @@ const initialStateSection = {
     ]
 };
 
-// todo generate section
 class Section{
     constructor(basicSection){
         this._sections = basicSection;
