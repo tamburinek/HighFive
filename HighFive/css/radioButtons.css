@@ -38,42 +38,42 @@
 }
 
 .radio-toolbar #blueLabel {
-    background-color: rgb(63, 63, 207);
+    background-color: #3f3fcf;
 }
 
 .radio-toolbar #lightBlueLabel {
-    background-color: lightblue;
+    background-color: #add8e6;
 }
 
 .radio-toolbar #whiteLabel {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .radio-toolbar #purpleLabel {
-    background-color: rgb(255, 143, 162);
+    background-color: #ff8fa2;
 }
 
 .radio-toolbar #yellowLabel {
-    background-color: yellow;
+    background-color: #ffff00;
 }
 
 .radio-toolbar #blakcLabel {
-    background-color: black;
+    background-color: #000000;
     border: 2px solid rgb(57, 56, 56);
 }
 
 .radio-toolbar #redLabel {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 .radio-toolbar #greenLabel {
-    background-color: rgb(52, 173, 52);
+    background-color: #34ad34;
 }
 
 .radio-toolbar #brownLabel {
-    background-color: brown;
+    background-color: #a52a2a;
 }
 
 .radio-toolbar #orangeLabel {
-    background-color: rgb(237, 170, 47);
+    background-color: #edaa2f;
 }
