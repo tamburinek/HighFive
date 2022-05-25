@@ -1,5 +1,6 @@
 //building pdf file from canvas
 function ExportPdf(){ 
+    setLocalStorage()
     kendo.drawing
         .drawDOM("#myCanvas2", 
         { 
@@ -16,6 +17,7 @@ function ExportPdf(){
     }
 
     function ExportPdfSecond(){ 
+        setLocalStorage()
         let canvasToAdd = document.getElementById("preview");
         canvasToAdd.style.display = "block"
         kendo.drawing

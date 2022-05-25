@@ -1,5 +1,6 @@
 window.addEventListener('resize', changeCanvasSize, true);
 window.addEventListener('load', changeCanvasSize, true);
+window.addEventListener('load', loadLocalStorage, true);
 let canvas = document.querySelector("canvas.canvas");
 canvas.style.letterSpacing = '0.1rem';
 let cHeight = canvas.height;
@@ -14,6 +15,26 @@ let fontMedium = "22px"
 let fontSmall = "20px"
 let fontRegular = "200"
 let fontBoldest = "900"
+
+function loadLocalStorage(){
+    document.getElementById("job-title-input").value = localStorage.getItem("title")
+    document.getElementById("first-name-input").value = localStorage.getItem("name")
+    document.getElementById("last-name-input").value = localStorage.getItem("surname")
+    document.getElementById("email-input").value = localStorage.getItem("email")
+    document.getElementById("phone-input").value = localStorage.getItem("phone")
+    document.getElementById("birth-input").value = localStorage.getItem("birth")
+    document.getElementById("placeholder-input").value = localStorage.getItem("placeholder")
+}
+
+function setLocalStorage(){
+    localStorage.setItem("title", document.getElementById("job-title-input").value)
+    localStorage.setItem("name", document.getElementById("first-name-input").value)
+    localStorage.setItem("surname", document.getElementById("last-name-input").value)
+    localStorage.setItem("email", document.getElementById("email-input").value)
+    localStorage.setItem("phone", document.getElementById("phone-input").value)
+    localStorage.setItem("birth", document.getElementById("birth-input").value)
+    localStorage.setItem("placeholder", document.getElementById("placeholder-input").value)
+}
 
 function changeCanvasSize() {
     drawRec()
@@ -58,7 +79,7 @@ function drawInputs(){
     ctx.fillText("Country:", cWidthSize / 1.45, cHeight /4);
 
     ctx.font = fontSmall + " " + fontName;
-    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 2, cHeight /18);
+    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 2, cHeight /22);
     ctx.fillText(document.getElementById("first-name-input").value, cWidthSize / 2.7, cHeight /10);
     ctx.fillText(document.getElementById("last-name-input").value, cWidthSize / 1.45, cHeight /10);
     ctx.fillText(document.getElementById("email-input").value, cWidthSize / 2.7, cHeight /5.4);
