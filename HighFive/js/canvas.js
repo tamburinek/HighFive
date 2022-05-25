@@ -9,23 +9,13 @@ let isBlackNeeded = false
 let imageToCanvas = document.getElementById("test-pic")
 let ctx = canvas.getContext('2d');
 let fontName = "Trebuchet MS"
-// let fontName = "Montserrat"
-// let fontName = "Roboto"
-// let fontName = "Verdana"
-// let fontName = "Cambria"
-// let fontName = "Poiret One"
-// let fontName = "Georgia"
 let fontBig = "20px"
 let fontMedium = "22px"
 let fontSmall = "20px"
 let fontRegular = "200"
-// let fontBold = "500"
 let fontBoldest = "900"
 
 function changeCanvasSize() {
-    // cHeight = canvas.clientHeight;
-    // cWidthSize = (210/297)*cHeight 
-    // canvas.style.width = (210/297)*cHeight + "px";
     drawRec()
 }
 
@@ -33,7 +23,6 @@ function drawRec(){
     if (canvas.getContext) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = colorToCanvas
-        // change boarder only with black color
 
         //left rectangle
         ctx.fillRect(0, 0, (cWidthSize / 3), cHeight);
@@ -62,20 +51,20 @@ function drawInputs(){
     ctx.font =  "bold " + fontBig + " " + fontName;
     ctx.fillText("Job title:", cWidthSize / 2.7, cHeight /18);
     ctx.fillText("Name:", cWidthSize / 2.7, cHeight /12);
-    ctx.fillText("Surname:", cWidthSize / 1.5, cHeight/12);
+    ctx.fillText("Surname:", cWidthSize / 1.45, cHeight/12);
     ctx.fillText("Email:", cWidthSize / 2.7, cHeight /6);
-    ctx.fillText("Phone:", cWidthSize / 1.5, cHeight /6);
+    ctx.fillText("Phone:", cWidthSize / 1.45, cHeight /6);
     ctx.fillText("Birth:", cWidthSize / 2.7, cHeight /4);
-    ctx.fillText("Country:", cWidthSize / 1.5, cHeight /4);
+    ctx.fillText("Country:", cWidthSize / 1.45, cHeight /4);
 
     ctx.font = fontSmall + " " + fontName;
     ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 2, cHeight /18);
     ctx.fillText(document.getElementById("first-name-input").value, cWidthSize / 2.7, cHeight /10);
-    ctx.fillText(document.getElementById("last-name-input").value, cWidthSize / 1.5, cHeight /10);
+    ctx.fillText(document.getElementById("last-name-input").value, cWidthSize / 1.45, cHeight /10);
     ctx.fillText(document.getElementById("email-input").value, cWidthSize / 2.7, cHeight /5.4);
-    ctx.fillText(document.getElementById("phone-input").value, cWidthSize / 1.5, cHeight /5.4);
+    ctx.fillText(document.getElementById("phone-input").value, cWidthSize / 1.45, cHeight /5.4);
     ctx.fillText(document.getElementById("birth-input").value, cWidthSize / 2.7, cHeight /3.75);
-    ctx.fillText(document.getElementById("placeholder-input").value, cWidthSize / 1.5, cHeight /3.75);
+    ctx.fillText(document.getElementById("placeholder-input").value, cWidthSize / 1.45, cHeight /3.75);
 
 }
 

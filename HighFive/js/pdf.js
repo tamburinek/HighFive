@@ -12,7 +12,7 @@ function ExportPdf(){
             keepTogether: ".prevent-split"
         })
             .then(function(group){
-            kendo.drawing.pdf.saveAs(group, "Test.pdf")
+            kendo.drawing.pdf.saveAs(group, "roadToA.pdf")
         });
     }
 
