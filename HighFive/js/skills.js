@@ -82,10 +82,12 @@ class Skill{
             if(!e.target.checked){
                 this.checkButton(e.target.value, false);
                 e.target.checked = false;
+                drawRec()
             }
             else{
                 this.checkButton(e.target.value, true);
                 e.target.checked = true;
+                drawRec()
             }  
         })
     
@@ -97,6 +99,7 @@ class Skill{
 
         labelEl.addEventListener("dragend", (e) =>{
             this.deleteSkill(e.target.htmlFor)
+            drawRec()
         })
     
         liEl.appendChild(inputElementik);
@@ -120,6 +123,7 @@ skillButton.addEventListener("click", (e) => {
         return;
     }
     skills.addSkill(textString);
+    drawRec()
     helperInput.value = '';
 })
 
