@@ -1,24 +1,25 @@
 window.addEventListener('resize', changeCanvasSize, true);
 window.addEventListener('load', changeCanvasSize, true);
 let canvas = document.querySelector("canvas.canvas");
+canvas.style.letterSpacing = '0.1rem';
 let cHeight = canvas.height;
 let cWidthSize = canvas.width;
 let colorToCanvas = "#001233"
 let isBlackNeeded = false
 let imageToCanvas = document.getElementById("test-pic")
 let ctx = canvas.getContext('2d');
-// let fontName = "Trebuchet MS"
+let fontName = "Trebuchet MS"
 // let fontName = "Montserrat"
 // let fontName = "Roboto"
 // let fontName = "Verdana"
 // let fontName = "Cambria"
-let fontName = "Poiret One"
+// let fontName = "Poiret One"
 // let fontName = "Georgia"
 let fontBig = "20px"
 let fontMedium = "22px"
 let fontSmall = "20px"
 let fontRegular = "200"
-let fontBold = "500"
+// let fontBold = "500"
 let fontBoldest = "900"
 
 function changeCanvasSize() {
@@ -68,7 +69,7 @@ function drawInputs(){
     ctx.fillText("Country:", cWidthSize / 1.5, cHeight /4);
 
     ctx.font = fontSmall + " " + fontName;
-    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 2.1, cHeight /18);
+    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 2, cHeight /18);
     ctx.fillText(document.getElementById("first-name-input").value, cWidthSize / 2.7, cHeight /10);
     ctx.fillText(document.getElementById("last-name-input").value, cWidthSize / 1.5, cHeight /10);
     ctx.fillText(document.getElementById("email-input").value, cWidthSize / 2.7, cHeight /5.4);
@@ -85,13 +86,13 @@ function drawSkills(){
     }else {
         ctx.fillStyle = "#ffffff"
     }
-    ctx.font = fontBig +" "+fontName;
+    ctx.font =  "bold " + fontBig + " " + fontName;
 
-    ctx.fillText("Skills:", cWidthSize / 8, cHeight /2.5);
-    ctx.font = fontMedium +" "+fontName;
+    ctx.fillText("Skills:", cWidthSize / 20, cHeight /2.8);
+    ctx.font = fontSmall +" "+fontName;
     for (const skill of initialState.skills) {
         if(skill.checked){
-            ctx.fillText(skill.text, cWidthSize / 13, (cHeight /2.5) + helperHeight);
+            ctx.fillText(skill.text, cWidthSize / 20, (cHeight /2.8) + helperHeight);
             helperHeight = helperHeight+30;
         }
     }
@@ -108,7 +109,7 @@ function drawSections(){
 
         ctx.font = fontSmall + " " + fontName;
         for (let index = 0; index < 8; index++) {
-            ctx.fillText(justForNow.value.substr(index*60,60), (cWidthSize / 2.7), (cHeight /2.8) + helperHeight + 30 + index*20);
+            ctx.fillText(justForNow.value.substr(index*49,49), (cWidthSize / 2.7), (cHeight /2.8) + helperHeight + 30 + index*20);
         }
         helperHeight = helperHeight + 250
     }
