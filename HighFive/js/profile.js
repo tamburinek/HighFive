@@ -2,7 +2,7 @@ let profilePic = document.getElementById("test-drop")
 let inputPic = document.getElementById("photo-input")
 let testPic = document.getElementById("test-pic")
 
-inputPic.onchange = function(e) {
+inputPic.onchange = function() {
 	let file = inputPic.files[0];
 	let url = URL.createObjectURL(file);
     testPic.src = url;
@@ -33,5 +33,7 @@ function previewFile(file) {
 		let img = document.getElementById("test-pic");
 		img.src = reader.result
 		// dropArea.appendChild(img)
+		drawRec()
 	}
+	drawRec()
 }
