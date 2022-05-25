@@ -6,7 +6,7 @@ function ExportPdf(){
             forcePageBreak: ".page-break", 
             // paperSize: "A4",
             margin: { top: "1cm", bottom: "1cm" },
-            scale: 1,
+            scale: 0.5,
             height: 297*2, 
             template: $("#page-template").html(),
             keepTogether: ".prevent-split"
