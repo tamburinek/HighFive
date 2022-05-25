@@ -3,7 +3,7 @@ window.addEventListener('load', changeCanvasSize, true);
 let canvas = document.querySelector("canvas.canvas");
 let cHeight = canvas.height;
 let cWidthSize = canvas.width;
-let colorToCanvas = "3f3fcf"
+let colorToCanvas = "#3f3fcf"
 let imageToCanvas = document.getElementById("test-pic")
 let ctx = canvas.getContext('2d');
 
