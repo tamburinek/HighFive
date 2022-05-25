@@ -9,7 +9,7 @@ let isBlackNeeded = false
 let imageToCanvas = document.getElementById("test-pic")
 let ctx = canvas.getContext('2d');
 let fontName = "Trebuchet MS"
-let fontBig = "26px"
+let fontBig = "24px"
 let fontMedium = "22px"
 let fontSmall = "20px"
 let fontRegular = "200"
@@ -49,7 +49,7 @@ function drawRec(){
 function drawInputs(){
     ctx.fillStyle = "#000000"
     ctx.font =  "bold " + fontBig + " " + fontName;
-    ctx.fillText("Job title:", cWidthSize / 2.7, cHeight /18);
+    ctx.fillText("Job title:", cWidthSize / 2.7, cHeight /22);
     ctx.fillText("Name:", cWidthSize / 2.7, cHeight /12);
     ctx.fillText("Surname:", cWidthSize / 1.45, cHeight/12);
     ctx.fillText("Email:", cWidthSize / 2.7, cHeight /6);
