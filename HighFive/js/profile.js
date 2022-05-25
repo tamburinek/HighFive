@@ -28,12 +28,14 @@ function handleDrop(e) {
 
 function previewFile(file) {
 	let reader = new FileReader()
-	reader.readAsDataURL(file)
-	reader.onloadend = function() {
+	try{
+		reader.readAsDataURL(file)
+		reader.onloadend = function() {
 		let img = document.getElementById("test-pic");
 		img.src = reader.result
-		// dropArea.appendChild(img)
 		drawRec()
+		}
+	}catch{
+		console.log("i tried")
 	}
-	drawRec()
 }

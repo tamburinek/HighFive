@@ -29,6 +29,7 @@ function drawRec(){
         ctx.fillText("Skills:", cWidthSize / 8, cHeight /2.5);
 
         drawSkills();
+        drawSections();
 
         //profile pic
         ctx.drawImage(imageToCanvas, cWidthSize / 22, cHeight /15, imageToCanvas.width *2, imageToCanvas.height*2)
@@ -47,4 +48,19 @@ function drawSkills(){
     }
 }
 
-// setInterval(drawRec, 3000)
+function drawSections(){
+    let helperHeight = 0
+    ctx.fillStyle = "#000000"
+    for (const skill of initialStateSection.sections) {
+        let justForNow = document.getElementById(skill.text + "-area")
+        ctx.font = "bold 30px Calibri";
+        ctx.fillText(skill.text, (cWidthSize / 2.7), (cHeight /2.8) + helperHeight);
+        ctx.font = "20px Calibri";
+        for (let index = 0; index < 8; index++) {
+            ctx.fillText(justForNow.value.substr(index*60,60), (cWidthSize / 2.7), (cHeight /2.8) + helperHeight + 30 + index*20);
+        }
+        helperHeight = helperHeight + 250
+    }
+}
+
+setInterval(drawRec, 1000)

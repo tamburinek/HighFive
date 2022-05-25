@@ -1,6 +1,6 @@
 const initialStateSection = {
     sections: [
-        { text: 'Basic info'}
+        { text: 'Summary'}
     ]
 };
 
@@ -29,6 +29,9 @@ class Section{
     }
 
     addSection(sectionName){
+        if(Object.keys(this._sections).length >= 3){
+            return;
+        }   
         if(this.exists(sectionName)){
             return;
         }
@@ -54,6 +57,7 @@ class Section{
         let textArea = document.createElement('textarea');
         textArea.id = testStringikSection + "-area";
         textArea.name = testStringikSection+ "-area";
+        textArea.maxLength = "480"
         textArea.cols = "30";
         textArea.rows="10";
 
@@ -95,7 +99,7 @@ eli.addEventListener("click", (e)=>{
     let form = document.getElementById("form");
     let basic = document.getElementById("basic");
     let buttonRemove = document.getElementById("basic-remove-button");
-    section.deleteSection("Basic info")
+    section.deleteSection("Summary")
     form.removeChild(basic);
     form.removeChild(buttonRemove);
 });

@@ -33,6 +33,9 @@ class Skill{
             this.checkButton(skill, true)
             return;
         }
+        if(Object.keys(this._skills).length >= 20){
+            return;
+        }        
         this.createSkill(skill, true);
         const newTodo = {
             text:skill,
