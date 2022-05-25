@@ -4,7 +4,6 @@ function ExportPdf(){
         .drawDOM("#myCanvas2", 
         { 
             forcePageBreak: ".page-break", 
-            // paperSize: "A4",
             margin: { top: "1cm", bottom: "1cm" },
             scale: 0.5,
             height: 297*2, 

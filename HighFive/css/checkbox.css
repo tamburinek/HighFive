@@ -7,7 +7,6 @@ ul.skill-tags li{
 }
 ul.skill-tags li label{
     display: inline-block;
-    /*background-color: rgba(255, 255, 255, .9);*/
     border: 2px solid #8B8B8B4C;
     color: #989898;
     border-radius: 5px;
@@ -49,9 +48,7 @@ ul.skill-tags li input[type="checkbox"]:checked + label::before {
 
 ul.skill-tags li input[type="checkbox"]:checked + label {
     border: 2px solid;
-    /*background-color: #989898;*/
     background-color: #eee;
-    /*background-color: #12bbd4;*/
     color: #1C1D1F;
     transition: all .2s;
 }
@@ -62,13 +59,7 @@ ul.skill-tags li input[type="checkbox"]:not(:checked) + label:hover {
     opacity: .6;
 }
 
-/*ul.skill-tags li input[type="checkbox"] {*/
-/*    display: absolute;*/
-/*}*/
 ul.skill-tags li input[type="checkbox"] {
     position: fixed;
     opacity: 0;
-}
-ul.skill-tags li input[type="checkbox"]:focus + label {
-    /*border: 2px solid #e9a1ff;*/
 }

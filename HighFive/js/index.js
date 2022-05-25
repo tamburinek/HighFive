@@ -15,14 +15,11 @@ typeWriter(0);
 let buttonToToggle = document.getElementById("index-button");
 buttonToToggle.addEventListener("click", (e) => {
     e.preventDefault()
-    // toglik.style.background = "white"
     let mainik = document.querySelector(".index-title");
     let logik = document.querySelector(".logoLogo")
     logik.style.width = "80vh";
     buttonToToggle.style.display = "none"
     mainik.style.display = "none"
-    // buttonToToggle.style.visibility = "hidden"
-    // mainik.style.visibility = "hidden"
     let balls = document.querySelector(".loader");
     balls.style.display = "block";
 

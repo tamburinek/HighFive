@@ -38,12 +38,10 @@
 }
 
 .radio-toolbar #blueLabel {
-    /* background-color: rgb(63, 63, 207); */
     background-color: #001233;
 }
 
 .radio-toolbar #lightBlueLabel {
-    /* background-color: lightblue; */
     background-color: #0A9396;
 }
 
@@ -52,7 +50,6 @@
 }
 
 .radio-toolbar #purpleLabel {
-    /* background-color: rgb(255, 143, 162); */
     background-color: #FFA69E;
 }
 
@@ -68,31 +65,16 @@
 
 .radio-toolbar #redLabel {
     background-color: #9B2226;
-    /* background-color: red; */
 }
 
 .radio-toolbar #greenLabel {
-    /* background-color: rgb(52, 173, 52); */
     background-color: #155D27;
 }
 
 .radio-toolbar #brownLabel {
     background-color: #5E503F;
-    /* background-color: brown; */
 }
 
 .radio-toolbar #orangeLabel {
-    /* background-color: rgb(237, 170, 47); */
     background-color: #EE9B00;
 }
-
-blueLabel : "#001233",
-    lightBlueLabel : "#0A9396", 
-    whiteLabel : "#ffffff", 
-    purpleLabel:"#FFA69E", 
-    redLabel : "#9B2226", 
-    greenLabel:"#155D27",
-    yellowLabel:  "#FFD60A", 
-    orangeLabel : "#EE9B00",
-    brownLabel : "#5E503F", 
-    blakcLabel : "#0A0908"

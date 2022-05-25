@@ -224,22 +224,13 @@ section {
     height: 100%;
     width: 30%;
     background-color: black;
-    /* defines the background color of the image */
-    /* mask: url("../resources/profile-user.svg") no-repeat center / contain; */
-    /* -webkit-mask: url("../resources/profile-user.svg") no-repeat center / contain; */
 }
-
-/* .photo-container:hover .photo-icon-container {
-    background-color: white;
-    mask: url("../resources/drag.png") no-repeat center / contain;
-    -webkit-mask: url("../resources/drag.png") no-repeat center / contain; 
-} */
-
 
 .photo-icon {
     height: 100%;
     margin-right: 0.5rem;
 }
+
 .photo-container input {
     display: none;
 }
@@ -461,57 +452,12 @@ textarea {
     }
 }
 
-/* #myCanvas2{
-    display: none;
-} */
-
-/* .transition {
-    position:absolute;
-    height:100%;
-    width:30%;
-    background: black;
-    transform: skewX(-5deg) translateX(-50px);
-    transition:2s all ease-in-out;
-    -webkit-transition:2s all ease-in-out;
-    float: left;
-    z-index: -1000;
-  }
-  
-  .content {
-    position:relative;
-    padding:200px 0 0 200px;
-    color:#000;
-    z-index:10;
-    height:300px;
-  }
-
-  .anim-trans {
-    animation: anim 4s ease-in-out;
-    }
-  
-  @keyframes anim{
-       0% {background: black; z-index: 11;width:200% ;}
-       20%  { z-index:11; transform: skewX(0deg) translateX(-25%);width:100%; }
-       40%   { transform: skewX(0deg) translateX(25%);
-   width:100%; z-index:11; box-shadow: 10px 10px 5px #000; background: white;}
-       60%   { transform: skewX(0deg) translateX(0);background: white;
-   width:70%;z-index:11; box-shadow: 10px 10px 5px #000;}
-       80%   { transform: skewX(0deg) translateX(0%);
-   width:30%;z-index:2; box-shadow: 10px 10px 5px #000;}
-       100%   { transform: skewX(0deg) translateX(0%);
-   width:0%;z-index:1; box-shadow: none;
-    background: white;}
-  } */
-
-/* $loaderHeight = 16px;
-$loaderWidth = 75px; */
 
 .loader {
     background-color: transparent;
     height: 16px;
     left: 50%;
     margin-left: -(75px / 2);
-    /* position: fixed; */
     text-align: center;
     top: 50%;
     width: 75px;
