@@ -38,42 +38,61 @@
 }
 
 .radio-toolbar #blueLabel {
-    background-color: #3f3fcf;
+    /* background-color: rgb(63, 63, 207); */
+    background-color: #001233;
 }
 
 .radio-toolbar #lightBlueLabel {
-    background-color: #add8e6;
+    /* background-color: lightblue; */
+    background-color: #0A9396;
 }
 
 .radio-toolbar #whiteLabel {
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .radio-toolbar #purpleLabel {
-    background-color: #ff8fa2;
+    /* background-color: rgb(255, 143, 162); */
+    background-color: #FFA69E;
 }
 
 .radio-toolbar #yellowLabel {
-    background-color: #ffff00;
+    background-color: yellow;
 }
 
 .radio-toolbar #blakcLabel {
-    background-color: #000000;
+    /* background-color: black; */
+    background-color: #0A0908;
     border: 2px solid rgb(57, 56, 56);
 }
 
 .radio-toolbar #redLabel {
-    background-color: #ff0000;
+    background-color: #9B2226;
+    /* background-color: red; */
 }
 
 .radio-toolbar #greenLabel {
-    background-color: #34ad34;
+    /* background-color: rgb(52, 173, 52); */
+    background-color: #155D27;
 }
 
 .radio-toolbar #brownLabel {
-    background-color: #a52a2a;
+    background-color: #5E503F;
+    /* background-color: brown; */
 }
 
 .radio-toolbar #orangeLabel {
-    background-color: #edaa2f;
+    /* background-color: rgb(237, 170, 47); */
+    background-color: #EE9B00;
 }
+
+blueLabel : "#001233",
+    lightBlueLabel : "#0A9396", 
+    whiteLabel : "#ffffff", 
+    purpleLabel:"#FFA69E", 
+    redLabel : "#9B2226", 
+    greenLabel:"#155D27",
+    yellowLabel:  "#FFD60A", 
+    orangeLabel : "#EE9B00",
+    brownLabel : "#5E503F", 
+    blakcLabel : "#0A0908"

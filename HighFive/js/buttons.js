@@ -1,16 +1,16 @@
-let colorButtons = ["blueLabel","purpleLabel", "redLabel", "greenLabel", "orangeLabel", "brownLabel", "blakcLabel"]
+let colorButtons = ["blueLabel","redLabel", "greenLabel","brownLabel", "blakcLabel"]
 
 const colorButtonsHex = {
-    blueLabel : "#3f3fcf",
-    lightBlueLabel : "#add8e6", 
+    blueLabel : "#001233",
+    lightBlueLabel : "#0A9396", 
     whiteLabel : "#ffffff", 
-    purpleLabel:"#ff8fa2", 
-    redLabel : "#ff0000", 
-    greenLabel:"#34ad34",
-    yellowLabel:  "#ffff00", 
-    orangeLabel : "#edaa2f",
-    brownLabel : "#a52a2a", 
-    blakcLabel : "#000000"
+    purpleLabel:"#FFA69E", 
+    redLabel : "#9B2226", 
+    greenLabel:"#155D27",
+    yellowLabel:  "#FFD60A", 
+    orangeLabel : "#EE9B00",
+    brownLabel : "#5E503F", 
+    blakcLabel : "#0A0908"
 }
 
 for (const button of colorButtons) {
@@ -22,7 +22,7 @@ for (const button of colorButtons) {
     })
 }
 
-let colorButtons2 = ["lightBlueLabel", "whiteLabel","yellowLabel"]
+let colorButtons2 = ["lightBlueLabel", "whiteLabel","yellowLabel", "orangeLabel", "purpleLabel"]
 
 for (const button of colorButtons2) {
     let helperButton = document.getElementById(button)
