@@ -1,5 +1,4 @@
-let colorButtons = ["blueLabel", "lightBlueLabel", "whiteLabel", "purpleLabel", "redLabel", "greenLabel", "yellowLabel", "orangeLabel",
-"brownLabel", "blakcLabel"]
+let colorButtons = ["blueLabel","purpleLabel", "redLabel", "greenLabel", "orangeLabel", "brownLabel", "blakcLabel"]
 
 const colorButtonsHex = {
     blueLabel : "#3f3fcf",
@@ -18,6 +17,18 @@ for (const button of colorButtons) {
     let helperButton = document.getElementById(button)
     helperButton.addEventListener("click", (e) => {
         colorToCanvas = colorButtonsHex[button]
+        isBlackNeeded = false
+        drawRec()
+    })
+}
+
+let colorButtons2 = ["lightBlueLabel", "whiteLabel","yellowLabel"]
+
+for (const button of colorButtons2) {
+    let helperButton = document.getElementById(button)
+    helperButton.addEventListener("click", (e) => {
+        colorToCanvas = colorButtonsHex[button]
+        isBlackNeeded = true
         drawRec()
     })
 }
