@@ -6,7 +6,7 @@ a.addEventListener('ended', function() {
     this.play();
 }, false);
 
-//changing volume image when pressing
+//changing volume image when pressing and stoping / starting audio
 function volumeChanger() {
     imageEl = document.getElementById("settingsImage");
     imageEl.addEventListener("click", (e) => {

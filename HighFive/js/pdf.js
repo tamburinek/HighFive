@@ -33,7 +33,6 @@ function ExportPdf(){
                 .then(function(group){
                 kendo.drawing.pdf.saveAs(group, "roadToA.pdf")
             });
-            // canvasToAdd.style.display = "none"
         }    
 
 let el = document.getElementById("index-button");

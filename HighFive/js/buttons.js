@@ -13,6 +13,7 @@ const colorButtonsHex = {
     blakcLabel : "#0A0908"
 }
 
+// setting eventListener for canvas colors
 for (const button of colorButtons) {
     let helperButton = document.getElementById(button)
     helperButton.addEventListener("click", (e) => {

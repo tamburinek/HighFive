@@ -10,6 +10,8 @@ inputPic.onchange = function() {
 
 const dropArea = document.querySelector(".app");
 
+
+// drag and drope prodile pic and show preview
 ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
 	dropArea.addEventListener(eventName, preventDefaults, false)
   })

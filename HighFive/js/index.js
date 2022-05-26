@@ -1,4 +1,4 @@
-//animating home page
+//animating home page text
 function typeWriter(i) {
     let speed = 100;
     var txt = `HighFive is effective CV creater and generator. CV is the most important thing when you are looking for new job.
@@ -11,7 +11,7 @@ function typeWriter(i) {
 }
 typeWriter(0);
 
-
+//short animation with tree dots
 let buttonToToggle = document.getElementById("index-button");
 buttonToToggle.addEventListener("click", (e) => {
     e.preventDefault()
@@ -26,6 +26,7 @@ buttonToToggle.addEventListener("click", (e) => {
     setTimeout(redirect, 1500)
 })
 
+//after animation is coming redirect
 function redirect(){
-    document.location.href = "../html/playground.html"
+    document.location.href = "html/playground.html"
 }

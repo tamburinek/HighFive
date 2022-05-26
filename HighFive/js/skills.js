@@ -1,3 +1,5 @@
+// js file for skills - adding, deleting etc.
+
 const initialState = {
     skills: [
         { text: 'JAVA', checked: false},

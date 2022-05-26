@@ -1,3 +1,5 @@
+// js file for sections - adding, deleting, etc.
+
 const initialStateSection = {
     sections: [
         { text: 'Summary'}

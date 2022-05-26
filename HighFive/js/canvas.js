@@ -1,3 +1,5 @@
+//here comes the main magic with canvas
+//variables
 window.addEventListener('resize', changeCanvasSize, true);
 window.addEventListener('load', changeCanvasSize, true);
 window.addEventListener('load', loadLocalStorage, true);
@@ -16,6 +18,7 @@ let fontSmall = "20px"
 let fontRegular = "200"
 let fontBoldest = "900"
 
+//load info if they are in localStorage
 function loadLocalStorage(){
     document.getElementById("job-title-input").value = localStorage.getItem("title")
     document.getElementById("first-name-input").value = localStorage.getItem("name")
@@ -26,6 +29,7 @@ function loadLocalStorage(){
     document.getElementById("placeholder-input").value = localStorage.getItem("placeholder")
 }
 
+//load info in local storage after user generated pdf
 function setLocalStorage(){
     localStorage.setItem("title", document.getElementById("job-title-input").value)
     localStorage.setItem("name", document.getElementById("first-name-input").value)
@@ -40,6 +44,7 @@ function changeCanvasSize() {
     drawRec()
 }
 
+//redraw canvas
 function drawRec(){
     if (canvas.getContext) {
         canvas.style.letterSpacing ="0px"
@@ -55,9 +60,12 @@ function drawRec(){
             ctx.fillStyle = "#ffffff"
         }
 
+        //two small rectangles
         ctx.fillRect((cWidthSize / 3), 0, 2, cHeight);
         ctx.fillRect((cWidthSize / 3) -6, 0, 2, cHeight);
 
+
+        //two triangles
         ctx.beginPath();
         ctx.moveTo(0, cHeight);
         ctx.lineTo(cWidthSize/18, cHeight);
@@ -74,6 +82,7 @@ function drawRec(){
         ctx.fill()
 
 
+        //info from user
         drawInputs();
         drawSkills();
         drawSections();
@@ -134,8 +143,8 @@ function drawSections(){
         ctx.fillText(skill.text, (cWidthSize / 2.7), (cHeight /2.8) + helperHeight);
 
         ctx.font = fontSmall + " " + fontName;
-        for (let index = 0; index < 8; index++) {
-            ctx.fillText(justForNow.value.substr(index*49,49), (cWidthSize / 2.7), (cHeight /2.8) + helperHeight + 30 + index*20);
+        for (let index = 0; index < 10; index++) {
+            ctx.fillText(justForNow.value.substr(index*48,48), (cWidthSize / 2.7), (cHeight /2.8) + helperHeight + 30 + index*20);
         }
         helperHeight = helperHeight + 250
     }
