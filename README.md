@@ -1,4 +1,4 @@
-# CV generator
+# CV generator - HighFive
 
 Created By: <br> 
 _Arťom Ňorba_
