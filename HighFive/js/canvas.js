@@ -42,6 +42,7 @@ function changeCanvasSize() {
 
 function drawRec(){
     if (canvas.getContext) {
+        canvas.style.letterSpacing ="0px"
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = colorToCanvas
 
@@ -60,7 +61,7 @@ function drawRec(){
         ctx.beginPath();
         ctx.moveTo(0, cHeight);
         ctx.lineTo(cWidthSize/18, cHeight);
-        ctx.lineTo(0, cHeight/1.04);
+        ctx.lineTo(0, cHeight/1.035);
         ctx.closePath();
         ctx.fill()
 
@@ -94,7 +95,7 @@ function drawInputs(){
     ctx.fillText("Country:", cWidthSize / 1.45, cHeight /4);
 
     ctx.font = fontSmall + " " + fontName;
-    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 1.85, cHeight /22);
+    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 1.95, cHeight /22);
     ctx.fillText(document.getElementById("first-name-input").value, cWidthSize / 2.7, cHeight /10);
     ctx.fillText(document.getElementById("last-name-input").value, cWidthSize / 1.45, cHeight /10);
     ctx.fillText(document.getElementById("email-input").value.substr(0,16), cWidthSize / 2.7, cHeight /5.4);
