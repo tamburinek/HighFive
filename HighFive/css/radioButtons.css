@@ -20,17 +20,13 @@
       height: 40px;
       width: 40px;
   }
-
-  .radio-toolbar input[type="radio"]:focus + label {
-      border: 2px dashed #444;
-  }
   
   .radio-toolbar input[type="radio"]:checked + label {
       border-color: white !important;
   }
 
   .radio-toolbar input[type="radio"]:checked + #whiteLabel {
-    border-color: orange !important;
+    border-color: salmon !important;
 }
 
 .radioLabel{
@@ -58,7 +54,6 @@
 }
 
 .radio-toolbar #blakcLabel {
-    /* background-color: black; */
     background-color: #0A0908;
     border: 2px solid rgb(57, 56, 56);
 }

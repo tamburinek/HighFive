@@ -1,6 +1,11 @@
 let a = new Audio();
 a.src = "../resources/elevator.mp3";
 
+a.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+
 //changing volume image when pressing
 function volumeChanger() {
     imageEl = document.getElementById("settingsImage");

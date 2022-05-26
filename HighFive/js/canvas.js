@@ -94,10 +94,11 @@ function drawInputs(){
     ctx.fillText("Country:", cWidthSize / 1.45, cHeight /4);
 
     ctx.font = fontSmall + " " + fontName;
-    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 1.95, cHeight /22);
+    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 1.85, cHeight /22);
     ctx.fillText(document.getElementById("first-name-input").value, cWidthSize / 2.7, cHeight /10);
     ctx.fillText(document.getElementById("last-name-input").value, cWidthSize / 1.45, cHeight /10);
-    ctx.fillText(document.getElementById("email-input").value, cWidthSize / 2.7, cHeight /5.4);
+    ctx.fillText(document.getElementById("email-input").value.substr(0,16), cWidthSize / 2.7, cHeight /5.4);
+    ctx.fillText(document.getElementById("email-input").value.substr(16,16), cWidthSize / 2.7, (cHeight /5.4)+20);
     ctx.fillText(document.getElementById("phone-input").value, cWidthSize / 1.45, cHeight /5.4);
     ctx.fillText(document.getElementById("birth-input").value, cWidthSize / 2.7, cHeight /3.75);
     ctx.fillText(document.getElementById("placeholder-input").value, cWidthSize / 1.45, cHeight /3.75);
