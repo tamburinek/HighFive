@@ -4,6 +4,7 @@
 }
 ul.skill-tags li{
     display: inline;
+    margin-right: 5px;  
 }
 ul.skill-tags li label{
     display: inline-block;

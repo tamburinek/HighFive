@@ -136,6 +136,9 @@ section.form::-webkit-scrollbar {
 /*********************************
 -----------FORM SEC---------------
 /*********************************/
+#form {
+    width: 75%;
+}
 .form {
     overflow-y: scroll;
 }
