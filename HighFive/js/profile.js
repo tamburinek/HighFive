@@ -33,7 +33,6 @@ function previewFile(file) {
 		reader.onloadend = function() {
 		let img = document.getElementById("test-pic");
 		img.src = reader.result
-		drawRec()
 		}
 	}catch{
 		console.log("i tried")

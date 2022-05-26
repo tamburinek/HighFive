@@ -48,15 +48,30 @@ function drawRec(){
         //left rectangle
         ctx.fillRect(0, 0, (cWidthSize / 3), cHeight);
 
-        ctx.fillStyle = "#000000"
-        ctx.fillRect((cWidthSize / 3), 0, 2, cHeight);
-
-        //skills
         if(isBlackNeeded){
             ctx.fillStyle = "#000000"
         }else {
             ctx.fillStyle = "#ffffff"
         }
+
+        ctx.fillRect((cWidthSize / 3), 0, 2, cHeight);
+        ctx.fillRect((cWidthSize / 3) -6, 0, 2, cHeight);
+
+        ctx.beginPath();
+        ctx.moveTo(0, cHeight);
+        ctx.lineTo(cWidthSize/18, cHeight);
+        ctx.lineTo(0, cHeight/1.04);
+        ctx.closePath();
+        ctx.fill()
+
+        ctx.fillStyle = "#000000"
+        ctx.beginPath();
+        ctx.moveTo(cWidthSize, 0);
+        ctx.lineTo(cWidthSize/1.065, 0);
+        ctx.lineTo(cWidthSize, cHeight/25);
+        ctx.closePath();
+        ctx.fill()
+
 
         drawInputs();
         drawSkills();
@@ -79,14 +94,13 @@ function drawInputs(){
     ctx.fillText("Country:", cWidthSize / 1.45, cHeight /4);
 
     ctx.font = fontSmall + " " + fontName;
-    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 2, cHeight /22);
+    ctx.fillText(document.getElementById("job-title-input").value, cWidthSize / 1.95, cHeight /22);
     ctx.fillText(document.getElementById("first-name-input").value, cWidthSize / 2.7, cHeight /10);
     ctx.fillText(document.getElementById("last-name-input").value, cWidthSize / 1.45, cHeight /10);
     ctx.fillText(document.getElementById("email-input").value, cWidthSize / 2.7, cHeight /5.4);
     ctx.fillText(document.getElementById("phone-input").value, cWidthSize / 1.45, cHeight /5.4);
     ctx.fillText(document.getElementById("birth-input").value, cWidthSize / 2.7, cHeight /3.75);
     ctx.fillText(document.getElementById("placeholder-input").value, cWidthSize / 1.45, cHeight /3.75);
-
 }
 
 function drawSkills(){
@@ -125,4 +139,4 @@ function drawSections(){
     }
 }
 
-setInterval(drawRec, 1000)
+setInterval(drawRec, 300)
